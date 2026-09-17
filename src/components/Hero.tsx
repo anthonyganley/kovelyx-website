@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="mx-auto flex min-h-[calc(100vh-73px)] max-w-7xl flex-col justify-center px-6 py-24 lg:px-8"
+      className="mx-auto max-w-7xl px-6 pb-24 pt-28 lg:px-8 lg:pt-36"
     >
       <div className="max-w-4xl">
         <div className="mb-8 inline-flex items-center rounded-full border border-blue-400/30 bg-blue-400/10 px-4 py-2 text-sm font-medium text-blue-300">
