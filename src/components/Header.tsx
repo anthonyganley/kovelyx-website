@@ -31,7 +31,7 @@ export default function Header() {
           </a>
 
           <a
-            href="https://github.com/anthonyganley/WS01-Kovelyx-Crypto"
+            href="https://github.com/anthonyganley/kovelyx-website"
             target="_blank"
             rel="noopener noreferrer"
             className="transition hover:text-white"
