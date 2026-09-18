@@ -4,6 +4,7 @@ import TokenInfo from "@/components/TokenInfo";
 import ContractStatus from "@/components/ContractStatus";
 import TokenDesign from "@/components/TokenDesign";
 import Roadmap from "@/components/Roadmap";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ContractStatus />
       <TokenDesign />
       <Roadmap />
+      <Footer />
     </main>
   );
 }
