@@ -37,6 +37,12 @@ export const metadata: Metadata = {
     siteName: "Kovelyx",
     type: "website",
     locale: "en_GB",
+    images: [
+      {
+        url: "/images/kovelyx-hero.png",
+        alt: "Kovelyx KOVL coin artwork",
+      },
+    ],
   },
 
   twitter: {
@@ -44,6 +50,7 @@ export const metadata: Metadata = {
     title: "Kovelyx | KOVL",
     description:
       "A fixed-supply ERC-20 digital token designed for the Base blockchain. Currently in development on Base Sepolia testnet.",
+    images: ["/images/kovelyx-hero.png"],
   },
 
   robots: {
