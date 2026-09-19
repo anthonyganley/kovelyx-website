@@ -1,53 +1,63 @@
-import { token } from "@/data/token";
-
 export default function Hero() {
   return (
     <section
-      id="top"
-      className="mx-auto max-w-7xl px-6 pb-24 pt-28 lg:px-8 lg:pt-36"
+      id="about"
+      className="border-b border-slate-800 bg-slate-950"
     >
-      <div className="max-w-4xl">
-        <div className="mb-8 inline-flex items-center rounded-full border border-blue-400/30 bg-blue-400/10 px-4 py-2 text-sm font-medium text-blue-300">
-          {token.testnet.name} Testnet
+      <div className="mx-auto grid max-w-7xl gap-8 px-6 py-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-12 lg:px-8 lg:py-18">
+
+        {/* Left side */}
+        <div>
+          <div className="inline-flex rounded-full border border-blue-900 bg-blue-950/40 px-4 py-2 text-sm text-blue-300">
+            Base Sepolia Testnet
+          </div>
+
+          <h1 className="mt-7 text-6xl font-bold tracking-tight text-white sm:text-7xl">
+            Kovelyx
+          </h1>
+
+          <p className="mt-5 text-2xl leading-9 text-slate-200">
+            A fixed-supply digital token designed for the Base blockchain.
+          </p>
+
+          <p className="mt-5 max-w-2xl text-base leading-8 text-slate-400">
+            KOVL has a fixed supply of 1,000,000,000 tokens, with no additional
+            minting, transfer tax, blacklist, pause function, or administrative
+            token controls.
+          </p>
+
+          <div className="mt-7 flex flex-wrap gap-4">
+            <a
+              href="#kovl"
+              className="rounded-lg bg-blue-600 px-6 py-3 text-base font-medium text-white transition hover:bg-blue-500"
+            >
+              Explore KOVL
+            </a>
+
+            <a
+              href="#status"
+              className="rounded-lg border border-slate-700 px-6 py-3 text-base font-medium text-white transition hover:border-slate-500"
+            >
+              Project Status
+            </a>
+          </div>
+
+          <div className="mt-8 border-t border-slate-800 pt-5">
+            <p className="text-sm text-slate-500">
+              Mainnet contract: Not deployed
+            </p>
+          </div>
         </div>
 
-        <h1 className="text-6xl font-semibold tracking-tight sm:text-7xl lg:text-8xl">
-          {token.name}
-        </h1>
-
-        <p
-          id="about"
-          className="mt-6 max-w-2xl text-xl leading-8 text-slate-300 sm:text-2xl"
-        >
-          A fixed-supply digital token designed for the {token.blockchain} blockchain.
-        </p>
-
-        <p className="mt-6 max-w-2xl text-base leading-7 text-slate-400">
-          {token.symbol} has a fixed supply of {token.supply.display} tokens,
-          with no additional minting, transfer tax, blacklist, pause function,
-          or administrative token controls.
-        </p>
-
-        <div className="mt-10 flex flex-wrap gap-4">
-          <a
-            href="#token"
-            className="rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-500"
-          >
-            Explore {token.symbol}
-          </a>
-
-          <a
-            href="#roadmap"
-            className="rounded-lg border border-slate-700 px-6 py-3 font-medium text-slate-200 transition hover:border-slate-500 hover:bg-slate-900"
-          >
-            Project Status
-          </a>
+        {/* Right side - Kovelyx artwork */}
+        <div className="mt-8 flex justify-center lg:mt-0 lg:justify-end">
+          <img
+            src="/images/kovelyx-hero.png"
+            alt="Kovelyx KOVL coin artwork"
+            className="w-full max-w-xl rounded-2xl object-cover shadow-2xl shadow-blue-950/20 lg:max-w-3xl"
+          />
         </div>
 
-        <div className="mt-12 border-t border-slate-800 pt-6 text-sm text-slate-500">
-          Mainnet contract:{" "}
-          {token.mainnet.deployed ? "Deployed" : "Not deployed"}
-        </div>
       </div>
     </section>
   );
